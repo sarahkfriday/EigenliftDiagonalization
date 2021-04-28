@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    428568,       8848]
-NotebookOptionsPosition[    424465,       8785]
-NotebookOutlinePosition[    424807,       8800]
-CellTagsIndexPosition[    424764,       8797]
+NotebookDataLength[    429788,       8866]
+NotebookOptionsPosition[    425685,       8803]
+NotebookOutlinePosition[    426027,       8818]
+CellTagsIndexPosition[    425984,       8815]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -218,8 +218,12 @@ matrix\>\""}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]",
    RowBox[{
     RowBox[{"newMatrixOrig", "::", "usage"}], " ", "=", " ", 
     "\"\<Randomly generates a matrix with a specified eigenstructure using a \
-For loop, written by Aaron Waclawcyzk \[IndentingNewLine]Parameters:\n\tj - \
-list of sizes of Jordon Blocks,\[IndentingNewLine]ev - list of eigenvalues \
+For loop, written by Aaron Waclawcyzk \[IndentingNewLine]Parameters:\n\tsizes \
+- list of sizes of Jordon Blocks, in ascending order if repeating eigenvalues \
+(ex: {2, 3, 4, 2},{\!\(\*SubscriptBox[\(\[Lambda]\), \(1\)]\), \
+\!\(\*SubscriptBox[\(\[Lambda]\), \(1\)]\), \!\(\*SubscriptBox[\(\[Lambda]\), \
+\(\(1\)\(,\)\(\\\ \)\)]\)\!\(\*SubscriptBox[\(\[Lambda]\), \(2\)]\)}),\
+\[IndentingNewLine]lambdas - list of eigenvalues in ascending order \
 corrosponding to those J-blocks\n\tReturns:\n\ta matrix of random numbers \
 that has specified eigenstructure\>\""}], ";"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
@@ -337,10 +341,15 @@ that has specified eigenstructure\>\""}], ";"}],
     RowBox[{"newMatrixBlocks", "::", "usage"}], " ", "=", " ", 
     "\"\<Randomly generates a matrix with a specified eigenstructure by first \
 creating list of Jordan blocks, then using ArrayFlatten (no For loop)\
-\[IndentingNewLine]Parameters:\n\tj - list of sizes of Jordon Blocks,\
-\[IndentingNewLine]ev - list of eigenvalues corrosponding to those J-blocks\n\
-\tReturns:\n\ta matrix of random numbers that has specified \
-eigenstructure\>\""}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+\[IndentingNewLine]Parameters:\n\tsizes - list of sizes of Jordon Blocks, in \
+ascending order if repeating eigenvalues (ex: {2, 3, 4, \
+2},{\!\(\*SubscriptBox[\(\[Lambda]\), \(1\)]\), \
+\!\(\*SubscriptBox[\(\[Lambda]\), \(1\)]\), \!\(\*SubscriptBox[\(\[Lambda]\), \
+\(\(1\)\(,\)\(\\\ \)\)]\)\!\(\*SubscriptBox[\(\[Lambda]\), \(2\)]\)}),\
+\[IndentingNewLine]lambdas - list of eigenvalues in ascending order \
+corrosponding to those J-blocks\n\tReturns:\n\ta matrix of random numbers \
+that has specified eigenstructure\>\""}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"newMatrixTable", "[", 
    RowBox[{"sizes_", ",", "lambdas_"}], "]"}], ":=", 
@@ -497,8 +506,12 @@ eigenstructure\>\""}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]",
    RowBox[{
     RowBox[{"newMatrixTable", "::", "usage"}], " ", "=", " ", 
     "\"\<Randomly generates a matrix with a specified eigenstructure using \
-nested Table operations, no For loop \[IndentingNewLine]Parameters:\n\tj - \
-list of sizes of Jordon Blocks,\[IndentingNewLine]ev - list of eigenvalues \
+nested Table operations, no For loop \[IndentingNewLine]Parameters:\n\tsizes \
+- list of sizes of Jordon Blocks, in ascending order if repeating eigenvalues \
+(ex: {2, 3, 4, 2},{\!\(\*SubscriptBox[\(\[Lambda]\), \(1\)]\), \
+\!\(\*SubscriptBox[\(\[Lambda]\), \(1\)]\), \!\(\*SubscriptBox[\(\[Lambda]\), \
+\(\(1\)\(,\)\(\\\ \)\)]\)\!\(\*SubscriptBox[\(\[Lambda]\), \(2\)]\)}),\
+\[IndentingNewLine]lambdas - list of eigenvalues in ascending order \
 corrosponding to those J-blocks\n\tReturns:\n\ta matrix of random numbers \
 that has specified eigenstructure\>\""}], ";"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
@@ -694,10 +707,14 @@ has specified eigenstructure\>\""}], ";"}],
    RowBox[{
     RowBox[{"makeAleph", "::", "usage"}], " ", "=", " ", 
     "\"\<Constructs Aleph matricies and puts them in a list (list of \
-matrices)\n\tParameters:\n\tj - list of sizes of Jordon Blocks,\
-\[IndentingNewLine]ev - list of eigenvalues corrosponding to those J-blocks\n\
-\tReturns:\n\talephList - a list of aleph matrices that correspond to the \
-eigenvalues provided\>\""}], ";"}], 
+matrices)\n\tParameters:\n\tsizes - list of sizes of Jordon Blocks, in \
+ascending order if repeating eigenvalues (ex: {2, 3, 4, \
+2},{\!\(\*SubscriptBox[\(\[Lambda]\), \(1\)]\), \
+\!\(\*SubscriptBox[\(\[Lambda]\), \(1\)]\), \!\(\*SubscriptBox[\(\[Lambda]\), \
+\(\(1\)\(,\)\(\\\ \)\)]\)\!\(\*SubscriptBox[\(\[Lambda]\), \(2\)]\)}),\
+\[IndentingNewLine]lambdas - list of eigenvalues in ascending order \
+corrosponding to those J-blocks\n\tReturns:\n\talephList - a list of aleph \
+matrices that correspond to the eigenvalues provided\>\""}], ";"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"findSV", "[", 
@@ -1029,7 +1046,7 @@ sizes\>\""}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]",
     "\"\<Block triangularize a matrix using the Shur decomposition and \
 Sylvester's theorem\n\t\tParameters: \n\t\tM - the matrix\n\t\tReturns: \n\t\t\
 bdM - the block triagularized matrix M\>\""}], ";"}], 
-  "\[IndentingNewLine]"}], "\n", 
+  "\n"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"findW", "[", 
    RowBox[{
@@ -2590,7 +2607,8 @@ the eigenlift for it\n\tParameters:\n\tj - list of sizes of Jordon Blocks,\
    3.8080460076340837`*^9}, {3.808046052081869*^9, 3.8080461257076735`*^9}, {
    3.808046184466784*^9, 3.8080462495820684`*^9}, {3.808046293501362*^9, 
    3.8080463887037935`*^9}, {3.828023257058377*^9, 3.8280233329116197`*^9}, {
-   3.8280233658633676`*^9, 3.828023491018326*^9}},
+   3.8280233658633676`*^9, 3.828023491018326*^9}, {3.82862928400121*^9, 
+   3.828629340349713*^9}},
  FontSize->18,ExpressionUUID->"223e8ee6-d6c7-4e3e-8247-2e5ce7a9c1c7"],
 
 Cell[CellGroupData[{
@@ -8801,53 +8819,53 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 560, 14, 295, "Section",ExpressionUUID->"7a29871e-1311-4e0e-901d-04dda30a83f5"],
-Cell[1143, 38, 116555, 2555, 9263, "Input",ExpressionUUID->"223e8ee6-d6c7-4e3e-8247-2e5ce7a9c1c7"],
+Cell[1143, 38, 117775, 2573, 9263, "Input",ExpressionUUID->"223e8ee6-d6c7-4e3e-8247-2e5ce7a9c1c7"],
 Cell[CellGroupData[{
-Cell[117723, 2597, 4389, 71, 92, "Input",ExpressionUUID->"f686807b-fbca-4224-b9e6-0c3bc6b2305c"],
-Cell[122115, 2670, 16333, 356, 211, "Print",ExpressionUUID->"f1f8d4c2-13fe-4526-8b0d-f1397899e217"]
+Cell[118943, 2615, 4389, 71, 92, "Input",ExpressionUUID->"f686807b-fbca-4224-b9e6-0c3bc6b2305c"],
+Cell[123335, 2688, 16333, 356, 211, "Print",ExpressionUUID->"f1f8d4c2-13fe-4526-8b0d-f1397899e217"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[138485, 3031, 17737, 389, 348, "Input",ExpressionUUID->"502a7cad-8dc7-4b43-925b-7346a24f149c"],
+Cell[139705, 3049, 17737, 389, 348, "Input",ExpressionUUID->"502a7cad-8dc7-4b43-925b-7346a24f149c"],
 Cell[CellGroupData[{
-Cell[156247, 3424, 14946, 279, 223, "Print",ExpressionUUID->"9313b98f-b4ba-45e4-a3d2-ce61a6c5e821"],
-Cell[171196, 3705, 3955, 83, 223, "Print",ExpressionUUID->"93b4bab1-184f-4411-9971-61163824a74a"],
-Cell[175154, 3790, 2317, 48, 41, "Print",ExpressionUUID->"18f0499f-0068-463d-92af-56da35edc119"],
-Cell[177474, 3840, 5046, 99, 37, "Print",ExpressionUUID->"c618e41c-cba7-4c0d-afa8-7f3f4566b141"],
-Cell[182523, 3941, 2315, 48, 41, "Print",ExpressionUUID->"bd873c8f-e266-4d3b-b89b-8735fc8798d6"],
-Cell[184841, 3991, 4306, 84, 37, "Print",ExpressionUUID->"b79ccdab-d5fd-40bf-a5e9-7ea9d83e8979"],
-Cell[189150, 4077, 2354, 47, 39, "Print",ExpressionUUID->"f1b52c3c-34ef-4f1d-a99f-e84fa2eb1c3a"],
-Cell[191507, 4126, 3927, 75, 53, "Print",ExpressionUUID->"349451a1-8d07-41fc-bbe1-a1bbcca7bd42"],
-Cell[195437, 4203, 2334, 46, 41, "Print",ExpressionUUID->"a9496825-0c01-4f8d-98b7-d06f64a2100c"],
-Cell[197774, 4251, 2429, 52, 69, "Print",ExpressionUUID->"484f9141-f0d9-4640-b2f2-5d3d3c5cad09"],
-Cell[200206, 4305, 29944, 525, 231, "Print",ExpressionUUID->"0028013e-bdf2-49e6-a28b-dbf060e54d9a"],
-Cell[230153, 4832, 18897, 343, 81, "Print",ExpressionUUID->"c3b89ac7-8248-4ae4-92af-f9b8a17e55ea"],
-Cell[249053, 5177, 1182, 20, 22, "Print",ExpressionUUID->"9a059d34-443c-44de-b570-366605b3289f"],
-Cell[250238, 5199, 6759, 140, 189, "Print",ExpressionUUID->"e99c3436-c0c0-4620-969f-880dd9d1c895"],
-Cell[257000, 5341, 1790, 39, 50, "Print",ExpressionUUID->"0a484c81-9fa6-4a8b-a3b2-87795fb90293"],
-Cell[258793, 5382, 1182, 20, 22, "Print",ExpressionUUID->"b246f941-b3a5-495b-9253-0cab537c6920"],
-Cell[259978, 5404, 6412, 130, 187, "Print",ExpressionUUID->"eaa2d99f-5e78-4df0-ab61-2c772702a43b"],
-Cell[266393, 5536, 1726, 37, 35, "Print",ExpressionUUID->"a58b59a4-4135-4953-8f48-0455f62b5eae"],
-Cell[268122, 5575, 8307, 150, 59, "Print",ExpressionUUID->"2c016282-d7c2-48e0-afbc-b617e258e60f"],
-Cell[276432, 5727, 2514, 61, 70, "Print",ExpressionUUID->"470361d3-40e5-4165-9599-9d1812383700"]
+Cell[157467, 3442, 14946, 279, 223, "Print",ExpressionUUID->"9313b98f-b4ba-45e4-a3d2-ce61a6c5e821"],
+Cell[172416, 3723, 3955, 83, 223, "Print",ExpressionUUID->"93b4bab1-184f-4411-9971-61163824a74a"],
+Cell[176374, 3808, 2317, 48, 41, "Print",ExpressionUUID->"18f0499f-0068-463d-92af-56da35edc119"],
+Cell[178694, 3858, 5046, 99, 37, "Print",ExpressionUUID->"c618e41c-cba7-4c0d-afa8-7f3f4566b141"],
+Cell[183743, 3959, 2315, 48, 41, "Print",ExpressionUUID->"bd873c8f-e266-4d3b-b89b-8735fc8798d6"],
+Cell[186061, 4009, 4306, 84, 37, "Print",ExpressionUUID->"b79ccdab-d5fd-40bf-a5e9-7ea9d83e8979"],
+Cell[190370, 4095, 2354, 47, 39, "Print",ExpressionUUID->"f1b52c3c-34ef-4f1d-a99f-e84fa2eb1c3a"],
+Cell[192727, 4144, 3927, 75, 53, "Print",ExpressionUUID->"349451a1-8d07-41fc-bbe1-a1bbcca7bd42"],
+Cell[196657, 4221, 2334, 46, 41, "Print",ExpressionUUID->"a9496825-0c01-4f8d-98b7-d06f64a2100c"],
+Cell[198994, 4269, 2429, 52, 69, "Print",ExpressionUUID->"484f9141-f0d9-4640-b2f2-5d3d3c5cad09"],
+Cell[201426, 4323, 29944, 525, 231, "Print",ExpressionUUID->"0028013e-bdf2-49e6-a28b-dbf060e54d9a"],
+Cell[231373, 4850, 18897, 343, 81, "Print",ExpressionUUID->"c3b89ac7-8248-4ae4-92af-f9b8a17e55ea"],
+Cell[250273, 5195, 1182, 20, 22, "Print",ExpressionUUID->"9a059d34-443c-44de-b570-366605b3289f"],
+Cell[251458, 5217, 6759, 140, 189, "Print",ExpressionUUID->"e99c3436-c0c0-4620-969f-880dd9d1c895"],
+Cell[258220, 5359, 1790, 39, 50, "Print",ExpressionUUID->"0a484c81-9fa6-4a8b-a3b2-87795fb90293"],
+Cell[260013, 5400, 1182, 20, 22, "Print",ExpressionUUID->"b246f941-b3a5-495b-9253-0cab537c6920"],
+Cell[261198, 5422, 6412, 130, 187, "Print",ExpressionUUID->"eaa2d99f-5e78-4df0-ab61-2c772702a43b"],
+Cell[267613, 5554, 1726, 37, 35, "Print",ExpressionUUID->"a58b59a4-4135-4953-8f48-0455f62b5eae"],
+Cell[269342, 5593, 8307, 150, 59, "Print",ExpressionUUID->"2c016282-d7c2-48e0-afbc-b617e258e60f"],
+Cell[277652, 5745, 2514, 61, 70, "Print",ExpressionUUID->"470361d3-40e5-4165-9599-9d1812383700"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[278995, 5794, 19307, 471, 250, "Input",ExpressionUUID->"b5e1d84e-477d-4941-b9ca-fe5fb1a6bb33"],
-Cell[298305, 6267, 8764, 308, 321, "Print",ExpressionUUID->"eb943d27-3f1c-4a2f-9848-37b78c261cfc"]
+Cell[280215, 5812, 19307, 471, 250, "Input",ExpressionUUID->"b5e1d84e-477d-4941-b9ca-fe5fb1a6bb33"],
+Cell[299525, 6285, 8764, 308, 321, "Print",ExpressionUUID->"eb943d27-3f1c-4a2f-9848-37b78c261cfc"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[307106, 6580, 408, 11, 35, "Input",ExpressionUUID->"0a67cca1-36d7-40c4-a312-495ed2652b23"],
+Cell[308326, 6598, 408, 11, 35, "Input",ExpressionUUID->"0a67cca1-36d7-40c4-a312-495ed2652b23"],
 Cell[CellGroupData[{
-Cell[307539, 6595, 14632, 266, 221, "Print",ExpressionUUID->"ba223038-ff1c-4896-b781-c5ed1e01143c"],
-Cell[322174, 6863, 3619, 75, 221, "Print",ExpressionUUID->"4ef4b385-daf7-4513-89b3-4393f0822670"],
-Cell[325796, 6940, 17596, 338, 191, "Print",ExpressionUUID->"5832dabf-4f46-4b58-b9da-bafb06d8e827"]
+Cell[308759, 6613, 14632, 266, 221, "Print",ExpressionUUID->"ba223038-ff1c-4896-b781-c5ed1e01143c"],
+Cell[323394, 6881, 3619, 75, 221, "Print",ExpressionUUID->"4ef4b385-daf7-4513-89b3-4393f0822670"],
+Cell[327016, 6958, 17596, 338, 191, "Print",ExpressionUUID->"5832dabf-4f46-4b58-b9da-bafb06d8e827"]
 }, Open  ]],
-Cell[343407, 7281, 6979, 104, 73, "Message",ExpressionUUID->"977b0002-a39f-48e3-9ef4-859f13c2c475"],
-Cell[350389, 7387, 7456, 112, 92, "Message",ExpressionUUID->"472860e4-2476-4566-8df1-b1dc86aab21c"],
-Cell[357848, 7501, 33340, 643, 433, "Print",ExpressionUUID->"a50e0390-923d-4e65-9be0-e45b3a2a4d80"],
-Cell[391191, 8146, 4097, 64, 55, "Message",ExpressionUUID->"ec7d74bb-ac67-4dd2-84f6-c88fd84d2299"],
-Cell[395291, 8212, 468, 10, 21, "Message",ExpressionUUID->"30024d0b-bf77-48eb-b469-16d2a9423c63"],
-Cell[395762, 8224, 28675, 557, 379, "Print",ExpressionUUID->"7ae50b69-be9b-4773-b7c6-81a3148a6253"]
+Cell[344627, 7299, 6979, 104, 73, "Message",ExpressionUUID->"977b0002-a39f-48e3-9ef4-859f13c2c475"],
+Cell[351609, 7405, 7456, 112, 92, "Message",ExpressionUUID->"472860e4-2476-4566-8df1-b1dc86aab21c"],
+Cell[359068, 7519, 33340, 643, 433, "Print",ExpressionUUID->"a50e0390-923d-4e65-9be0-e45b3a2a4d80"],
+Cell[392411, 8164, 4097, 64, 55, "Message",ExpressionUUID->"ec7d74bb-ac67-4dd2-84f6-c88fd84d2299"],
+Cell[396511, 8230, 468, 10, 21, "Message",ExpressionUUID->"30024d0b-bf77-48eb-b469-16d2a9423c63"],
+Cell[396982, 8242, 28675, 557, 379, "Print",ExpressionUUID->"7ae50b69-be9b-4773-b7c6-81a3148a6253"]
 }, Open  ]]
 }, Open  ]]
 }
