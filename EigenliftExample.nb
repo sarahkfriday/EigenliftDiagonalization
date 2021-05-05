@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    243497,       5605]
-NotebookOptionsPosition[    236819,       5497]
-NotebookOutlinePosition[    237370,       5516]
-CellTagsIndexPosition[    237327,       5513]
+NotebookDataLength[    243951,       5619]
+NotebookOptionsPosition[    237139,       5508]
+NotebookOutlinePosition[    237690,       5527]
+CellTagsIndexPosition[    237647,       5524]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -5103,7 +5103,18 @@ Cell[BoxData["True"], "Output",
  CellChangeTimes->{3.8291278634498606`*^9, 3.8291279778192997`*^9},
  CellLabel->
   "Out[2443]=",ExpressionUUID->"c77cdee1-6ab4-443a-9440-5835145b1ed4"]
+}, Open  ]]
 }, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Trying out the Schur decomposition to see if we can get an answer that \
+illuminates where each of the jordan blocks ended up\
+\>", "Subsection",
+ CellChangeTimes->{{3.829235608141287*^9, 
+  3.8292356346290197`*^9}},ExpressionUUID->"2d415756-2e28-4d29-929a-\
+07e563be337f"],
 
 Cell[CellGroupData[{
 
@@ -5583,7 +5594,7 @@ Cell[203969, 4657, 2096, 44, 66, "Print",ExpressionUUID->"968d235a-4a5c-4966-bf3
 Cell[206068, 4703, 2106, 42, 65, "Print",ExpressionUUID->"a3222f8b-7834-44bb-b233-69f826ea66bc"],
 Cell[208177, 4747, 7827, 229, 249, "Print",ExpressionUUID->"a77a0b3b-742b-4d4c-b2bd-e83cbec01892"]
 }, Open  ]],
-Cell[216019, 4979, 750, 12, 65, "Output",ExpressionUUID->"66039e82-4c36-4d4d-9ca0-9992753eaccd"]
+Cell[216019, 4979, 750, 12, 32, "Output",ExpressionUUID->"66039e82-4c36-4d4d-9ca0-9992753eaccd"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[216806, 4996, 1889, 50, 162, "Input",ExpressionUUID->"1f7d1f14-a76e-454e-a85a-8c08f4c7dedc"],
@@ -5596,13 +5607,16 @@ Cell[219986, 5080, 409, 8, 22, "Print",ExpressionUUID->"829f530b-1a26-4f48-a2f6-
 Cell[220410, 5091, 181, 3, 32, "Output",ExpressionUUID->"730cb56f-f4b9-44e8-8cb1-45653bdc6284"],
 Cell[220594, 5096, 182, 3, 32, "Output",ExpressionUUID->"e1c0b092-f167-43da-8014-f75ce1485b73"],
 Cell[220779, 5101, 183, 3, 32, "Output",ExpressionUUID->"c77cdee1-6ab4-443a-9440-5835145b1ed4"]
+}, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[220999, 5109, 1702, 42, 105, "Input",ExpressionUUID->"e8c5a82f-300c-479b-8cc5-fe00f24a7255"],
+Cell[221011, 5110, 283, 6, 53, "Subsection",ExpressionUUID->"2d415756-2e28-4d29-929a-07e563be337f"],
 Cell[CellGroupData[{
-Cell[222726, 5155, 1773, 41, 112, "Print",ExpressionUUID->"fe78c715-384e-45ef-84f4-4da9a0c2afa3"],
-Cell[224502, 5198, 4375, 128, 116, "Print",ExpressionUUID->"2617a3bf-249c-413a-b4c4-58336d2eaad7"],
-Cell[228880, 5328, 7887, 163, 131, "Print",ExpressionUUID->"2e8ff5ac-85ea-4abc-813b-4c9f3abce99e"]
+Cell[221319, 5120, 1702, 42, 105, "Input",ExpressionUUID->"e8c5a82f-300c-479b-8cc5-fe00f24a7255"],
+Cell[CellGroupData[{
+Cell[223046, 5166, 1773, 41, 112, "Print",ExpressionUUID->"fe78c715-384e-45ef-84f4-4da9a0c2afa3"],
+Cell[224822, 5209, 4375, 128, 116, "Print",ExpressionUUID->"2617a3bf-249c-413a-b4c4-58336d2eaad7"],
+Cell[229200, 5339, 7887, 163, 131, "Print",ExpressionUUID->"2e8ff5ac-85ea-4abc-813b-4c9f3abce99e"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
