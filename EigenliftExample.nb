@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    100504,       2178]
-NotebookOptionsPosition[     99419,       2150]
-NotebookOutlinePosition[     99970,       2169]
-CellTagsIndexPosition[     99927,       2166]
+NotebookDataLength[    103237,       2240]
+NotebookOptionsPosition[    102152,       2212]
+NotebookOutlinePosition[    102703,       2231]
+CellTagsIndexPosition[    102660,       2228]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -37,6 +37,10 @@ Cell[BoxData[
        " ", "=", " ", 
       RowBox[{"EigenliftMatrix", "[", 
        RowBox[{"sizes", ",", "eigenvalues"}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"mList", " ", "=", " ", 
+      RowBox[{"{", 
+       RowBox[{"M", ",", "m", ",", "V", ",", "W", ",", "A"}], "}"}]}], ";", 
      "\[IndentingNewLine]", "\[IndentingNewLine]", 
      RowBox[{"Pane", "[", "\[IndentingNewLine]", 
       RowBox[{
@@ -491,10 +495,12 @@ list to represent blocks with the same eigenvalue\>\"", ",", " ", "12"}],
    3.834849941475581*^9, 3.8348501503488398`*^9}, {3.8348501917770176`*^9, 
    3.8348503085146227`*^9}, {3.834850338741508*^9, 3.834850419937907*^9}, {
    3.834912138523362*^9, 3.834912187062809*^9}, {3.8349122419809413`*^9, 
-   3.834912320769922*^9}, {3.834912369483672*^9, 3.834912420654373*^9}},
+   3.834912320769922*^9}, {3.834912369483672*^9, 3.834912420654373*^9}, {
+   3.8349144653241353`*^9, 3.834914530101076*^9}, {3.8349145638667707`*^9, 
+   3.8349145662465982`*^9}},
  FontSize->14,
  CellLabel->
-  "In[204]:=",ExpressionUUID->"a07c684b-ed8d-4007-947b-d5093085059a"],
+  "In[206]:=",ExpressionUUID->"a07c684b-ed8d-4007-947b-d5093085059a"],
 
 Cell[BoxData[
  TagBox[
@@ -532,7 +538,7 @@ to represent blocks with the same eigenvalue", 12]],
        Style["Press \"Return\" or click anywhere to run", 14, Bold, "Panel"]],
        Manipulate`Dump`ThisIsNotAControl}, {
       Hold[""], Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {
-    810., {397., 403.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    748., {397., 403.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
     Typeset`skipInitDone$$ = True}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`eigenvalues$$ = {
@@ -546,7 +552,8 @@ to represent blocks with the same eigenvalue", 12]],
       "Body" :> ({$CellContext`M, $CellContext`m, $CellContext`V, \
 $CellContext`W, $CellContext`A} = \
 $CellContext`EigenliftMatrix[$CellContext`sizes$$, \
-$CellContext`eigenvalues$$]; Pane[
+$CellContext`eigenvalues$$]; $CellContext`mList = {$CellContext`M, \
+$CellContext`m, $CellContext`V, $CellContext`W, $CellContext`A}; Pane[
          Text[
           Grid[{{
              Text[
@@ -643,7 +650,7 @@ to represent blocks with the same eigenvalue", 12],
          ""}, "Options" :> {
        ControlPlacement -> Left, TrackedSymbols :> Manipulate}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{1210., {429., 435.}},
+     ImageSizeCache->{1148., {429., 435.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -672,9 +679,9 @@ to represent blocks with the same eigenvalue", 12],
    3.8348501123444443`*^9}, 3.8348501510817013`*^9, {3.8348502427805552`*^9, 
    3.834850309138956*^9}, {3.834850368806315*^9, 3.8348504204065485`*^9}, 
    3.8349123227798862`*^9, 3.834912373160788*^9, 3.834912421231121*^9, 
-   3.8349127980058756`*^9},
+   3.8349127980058756`*^9, {3.834914546840657*^9, 3.8349145668214235`*^9}},
  CellLabel->
-  "Out[204]=",ExpressionUUID->"3dc94ad2-d9fc-4501-901a-ba4e58ff2515"]
+  "Out[206]=",ExpressionUUID->"9221fe2b-de82-4490-b64a-8707d4d0eebe"]
 }, Open  ]],
 
 Cell[BoxData["\[IndentingNewLine]"], "Input",
@@ -1853,6 +1860,60 @@ the matrix \!\(\*SubscriptBox[\(m\), \(i\)]\)\>\""}], ";"}],
                     "--", "-"}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}\
 ]}]}]}]}]}]}], "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{
+    RowBox[{"LiftedMatrixPowers", "[", 
+     RowBox[{"Mlist_", ",", " ", "num_"}], "]"}], ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"mlist", " ", "=", " ", "Mlist"}], ",", 
+        RowBox[{"x", "=", "num"}], ",", " ", "mPower"}], "}"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"If", "[", "]"}]}], "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"LiftedMatrixPowers", "::", "usage"}], " ", "=", 
+    "\"\<Calculates the matrix powers of original matrix m by deriving it \
+from the lifted matrix M\n\tParameters:\n\t\tMlist - list consisting of {the \
+lifted matrix M, the origianl matrix m, V, \!\(\*SuperscriptBox[\(W\), \(*\)]\
+\), Aleph}\n\t\tnum - the exponent\n\tReturns:\n\t\tmPower - the result of \
+deriving \!\(\*SuperscriptBox[\(m\), \(n\)]\) from the lifted M\>\""}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"--", 
+     RowBox[{"--", 
+      RowBox[{"--", 
+       RowBox[{"--", 
+        RowBox[{"--", 
+         RowBox[{"--", 
+          RowBox[{"--", 
+           RowBox[{"--", 
+            RowBox[{"--", 
+             RowBox[{"--", 
+              RowBox[{"--", 
+               RowBox[{"--", 
+                RowBox[{"--", 
+                 RowBox[{"--", 
+                  RowBox[{"--", 
+                   RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{
+                    "--", "-"}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}\
+]}]}]}]}]}]}], "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"EigenliftMatrix", "[", 
      RowBox[{"sizes_", ",", " ", "lambdas_"}], "]"}], ":=", 
     RowBox[{"Module", "[", 
@@ -2142,10 +2203,11 @@ of n-1 left generalized eigenvectors for each \!\(\*SubscriptBox[\(m\), \
    3.832775130569146*^9}, {3.832775258634003*^9, 3.832775259950246*^9}, {
    3.8327753045543213`*^9, 3.8327753187025785`*^9}, {3.8327753663296595`*^9, 
    3.832775381369867*^9}, {3.832775430029401*^9, 3.832775430545664*^9}, {
-   3.8327786887326565`*^9, 3.832778698310537*^9}},
- FontSize->14,
- CellLabel->
-  "In[184]:=",ExpressionUUID->"899aff66-6054-42f7-8cb5-ecb5dd9ad59f"]
+   3.8327786887326565`*^9, 3.832778698310537*^9}, {3.834912878058718*^9, 
+   3.8349129598660145`*^9}, {3.834913006357155*^9, 3.8349130894265966`*^9}, {
+   3.8349133209921756`*^9, 3.8349133220635195`*^9}, {3.8349140558697386`*^9, 
+   3.834914070479327*^9}, {3.8349146864967394`*^9, 3.8349149840605717`*^9}},
+ FontSize->14,ExpressionUUID->"899aff66-6054-42f7-8cb5-ecb5dd9ad59f"]
 }, Open  ]]
 },
 WindowSize->{1520, 782},
@@ -2171,14 +2233,14 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 183, 2, 85, "Title",ExpressionUUID->"e8fb103f-b462-4442-91d8-d5aeebf9728a"],
 Cell[CellGroupData[{
-Cell[788, 28, 24900, 468, 2561, "Input",ExpressionUUID->"a07c684b-ed8d-4007-947b-d5093085059a"],
-Cell[25691, 498, 8355, 178, 916, "Output",ExpressionUUID->"3dc94ad2-d9fc-4501-901a-ba4e58ff2515"]
+Cell[788, 28, 25170, 474, 2583, "Input",ExpressionUUID->"a07c684b-ed8d-4007-947b-d5093085059a"],
+Cell[25961, 504, 8508, 179, 883, "Output",ExpressionUUID->"9221fe2b-de82-4490-b64a-8707d4d0eebe"]
 }, Open  ]],
-Cell[34061, 679, 149, 3, 48, "Input",ExpressionUUID->"01843b45-c14c-44c1-87ea-5153de063fb9"]
+Cell[34484, 686, 149, 3, 48, "Input",ExpressionUUID->"01843b45-c14c-44c1-87ea-5153de063fb9"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[34247, 687, 206, 3, 85, "Title",ExpressionUUID->"b7a78a9e-206a-425d-8390-7b152090dd94"],
-Cell[34456, 692, 64947, 1455, 6017, "Input",ExpressionUUID->"899aff66-6054-42f7-8cb5-ecb5dd9ad59f"]
+Cell[34670, 694, 206, 3, 85, "Title",ExpressionUUID->"b7a78a9e-206a-425d-8390-7b152090dd94"],
+Cell[34879, 699, 67257, 1510, 6303, "Input",ExpressionUUID->"899aff66-6054-42f7-8cb5-ecb5dd9ad59f"]
 }, Open  ]]
 }
 ]
