@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    103237,       2240]
-NotebookOptionsPosition[    102152,       2212]
-NotebookOutlinePosition[    102703,       2231]
-CellTagsIndexPosition[    102660,       2228]
+NotebookDataLength[    108537,       2366]
+NotebookOptionsPosition[    107451,       2338]
+NotebookOutlinePosition[    108002,       2357]
+CellTagsIndexPosition[    107959,       2354]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -68,8 +68,20 @@ Cell[BoxData[
             RowBox[{"{", "}"}], ",", "\[IndentingNewLine]", 
             "\[IndentingNewLine]", 
             RowBox[{"(*", " ", 
-             RowBox[{"This", " ", "part", " ", "outputs", " ", 
-              RowBox[{"M", "'"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"--", 
+               RowBox[{"--", 
+                RowBox[{"--", 
+                 RowBox[{"--", 
+                  RowBox[{"--", 
+                   RowBox[{"-", " ", "This"}]}]}]}]}]}], " ", "part", " ", 
+              "outputs", " ", 
+              RowBox[{
+               RowBox[{
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"M", "'"}], " ", "--"}], "--"}], "--"}], "--"}], 
+              RowBox[{"--", "-"}]}], " ", "*)"}], "\[IndentingNewLine]", 
             RowBox[{"{", "\[IndentingNewLine]", 
              RowBox[{
               RowBox[{"Row", "[", 
@@ -146,8 +158,71 @@ Cell[BoxData[
               RowBox[{"new", " ", "line"}], " ", "*)"}], " ", "}"}], ",", 
             "\[IndentingNewLine]", "\[IndentingNewLine]", 
             RowBox[{"(*", " ", 
-             RowBox[{"Diagonalizability", " ", "check"}], " ", "*)"}], 
+             RowBox[{
+              RowBox[{"--", 
+               RowBox[{"--", 
+                RowBox[{"--", 
+                 RowBox[{"--", 
+                  RowBox[{"--", 
+                   RowBox[{"-", " ", "This"}]}]}]}]}]}], " ", "part", " ", 
+              "outputs", " ", 
+              RowBox[{
+               RowBox[{
+                RowBox[{
+                 RowBox[{"matrixplot", " ", "--"}], "--"}], "--"}], "--"}], 
+              RowBox[{"--", "-"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+            RowBox[{"{", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"Row", "[", 
+               RowBox[{"{", "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"Text", "@", 
+                  RowBox[{"Style", "[", 
+                   RowBox[{
+                   "\"\<\[ScriptCapitalM] = \>\"", ",", "Italic", ",", "14"}],
+                    "]"}]}], ",", "\[IndentingNewLine]", 
+                 RowBox[{"Graphics", "[", 
+                  RowBox[{
+                   RowBox[{"MatrixPlot", "[", "M", "]"}], ",", " ", 
+                   RowBox[{"ImageSize", "\[Rule]", "Full"}]}], "]"}]}], 
+                "\[IndentingNewLine]", "}"}], "]"}], 
+              RowBox[{"(*", " ", 
+               RowBox[{"end", " ", "of", " ", "row"}], " ", "*)"}], ",", 
+              "\[IndentingNewLine]", "\"\<\>\"", ",", "\[IndentingNewLine]", 
+              "\"\<\>\"", ",", "\[IndentingNewLine]", 
+              RowBox[{"Row", "[", 
+               RowBox[{"{", "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"Text", "@", 
+                  RowBox[{"Style", "[", 
+                   RowBox[{"\"\<M = \>\"", ",", "Italic", ",", "14"}], 
+                   "]"}]}], ",", "\[IndentingNewLine]", 
+                 RowBox[{"Graphics", "[", 
+                  RowBox[{
+                   RowBox[{"MatrixPlot", "[", "m", "]"}], ",", " ", 
+                   RowBox[{"ImageSize", "\[Rule]", "Full"}]}], "]"}]}], 
+                "\[IndentingNewLine]", "}"}], "]"}]}], 
+             RowBox[{"(*", " ", 
+              RowBox[{"end", " ", "of", " ", "row"}], " ", "*)"}], 
+             "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
             "\[IndentingNewLine]", 
+            RowBox[{"{", 
+             RowBox[{"(*", " ", 
+              RowBox[{"new", " ", "line"}], " ", "*)"}], " ", "}"}], ",", 
+            "\[IndentingNewLine]", "\[IndentingNewLine]", 
+            RowBox[{"(*", " ", 
+             RowBox[{
+              RowBox[{"--", 
+               RowBox[{"--", 
+                RowBox[{"--", 
+                 RowBox[{"--", 
+                  RowBox[{"--", 
+                   RowBox[{"-", " ", "Diagonalizability"}]}]}]}]}]}], " ", 
+              RowBox[{
+               RowBox[{
+                RowBox[{
+                 RowBox[{"check", " ", "--"}], "--"}], "--"}], "--"}], 
+              RowBox[{"--", "-"}]}], " ", "*)"}], "\[IndentingNewLine]", 
             RowBox[{"{", "\[IndentingNewLine]", "\[IndentingNewLine]", 
              RowBox[{
               RowBox[{"Row", "[", 
@@ -223,8 +298,18 @@ Cell[BoxData[
             "\[IndentingNewLine]", "\[IndentingNewLine]", 
             RowBox[{"(*", " ", 
              RowBox[{
-             "This", " ", "part", " ", "outputs", " ", "the", " ", 
-              "Eigensystems"}], " ", "*)"}], "\[IndentingNewLine]", 
+              RowBox[{"--", 
+               RowBox[{"--", 
+                RowBox[{"--", 
+                 RowBox[{"--", 
+                  RowBox[{"--", 
+                   RowBox[{"-", " ", "This"}]}]}]}]}]}], " ", "part", " ", 
+              "outputs", " ", "the", " ", 
+              RowBox[{
+               RowBox[{
+                RowBox[{
+                 RowBox[{"Eigensystems", " ", "--"}], "--"}], "--"}], "--"}], 
+              RowBox[{"--", "-"}]}], " ", "*)"}], "\[IndentingNewLine]", 
             RowBox[{"{", "\[IndentingNewLine]", 
              RowBox[{
               RowBox[{"Row", "[", 
@@ -269,8 +354,18 @@ Cell[BoxData[
             RowBox[{"{", "\[IndentingNewLine]", 
              RowBox[{"(*", " ", 
               RowBox[{
-              "This", " ", "part", " ", "outputs", " ", "Eigenvectors"}], " ",
-               "*)"}], "\[IndentingNewLine]", 
+               RowBox[{"--", 
+                RowBox[{"--", 
+                 RowBox[{"--", 
+                  RowBox[{"--", 
+                   RowBox[{"--", 
+                    RowBox[{"-", " ", "This"}]}]}]}]}]}], " ", "part", " ", 
+               "outputs", " ", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"Eigenvectors", " ", "--"}], "--"}], "--"}], "--"}], 
+               RowBox[{"--", "-"}]}], " ", "*)"}], "\[IndentingNewLine]", 
              RowBox[{
               RowBox[{"Row", "[", 
                RowBox[{"{", "\[IndentingNewLine]", 
@@ -322,7 +417,7 @@ Cell[BoxData[
        "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
        RowBox[{"ImageSize", "\[Rule]", 
         RowBox[{"{", 
-         RowBox[{"Automatic", ",", "800"}], "}"}]}], ",", 
+         RowBox[{"Automatic", ",", "Automatic"}], "}"}]}], ",", 
        "\[IndentingNewLine]", 
        RowBox[{"Alignment", "\[Rule]", 
         RowBox[{"{", 
@@ -332,9 +427,19 @@ Cell[BoxData[
     "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
     RowBox[{"(*", " ", 
      RowBox[{
-     "This", " ", "section", " ", "formats", " ", "the", " ", "input", " ", 
-      "window", " ", "to", " ", "look", " ", "nice", " ", "and", " ", "be", 
-      " ", "more", " ", "explanatory"}], " ", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"--", 
+       RowBox[{"--", 
+        RowBox[{"--", 
+         RowBox[{"--", 
+          RowBox[{"--", 
+           RowBox[{"-", " ", "This"}]}]}]}]}]}], " ", "section", " ", 
+      "formats", " ", "the", " ", "input", " ", "window", " ", "to", " ", 
+      "look", " ", "nice", " ", "and", " ", "be", " ", "more", " ", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"explanatory", " ", "--"}], "--"}], "--"}], "--"}], 
+      RowBox[{"--", "-"}]}], " ", "*)"}], "\[IndentingNewLine]", 
     "\[IndentingNewLine]", 
     RowBox[{"Style", "[", 
      RowBox[{
@@ -497,10 +602,12 @@ list to represent blocks with the same eigenvalue\>\"", ",", " ", "12"}],
    3.834912138523362*^9, 3.834912187062809*^9}, {3.8349122419809413`*^9, 
    3.834912320769922*^9}, {3.834912369483672*^9, 3.834912420654373*^9}, {
    3.8349144653241353`*^9, 3.834914530101076*^9}, {3.8349145638667707`*^9, 
-   3.8349145662465982`*^9}},
+   3.8349145662465982`*^9}, {3.834930113944643*^9, 3.834930192740923*^9}, {
+   3.8349302230661983`*^9, 3.834930242531311*^9}, {3.834930411769259*^9, 
+   3.8349304157177258`*^9}, {3.834930465038822*^9, 3.8349305193232822`*^9}},
  FontSize->14,
  CellLabel->
-  "In[206]:=",ExpressionUUID->"a07c684b-ed8d-4007-947b-d5093085059a"],
+  "In[221]:=",ExpressionUUID->"a07c684b-ed8d-4007-947b-d5093085059a"],
 
 Cell[BoxData[
  TagBox[
@@ -538,7 +645,7 @@ to represent blocks with the same eigenvalue", 12]],
        Style["Press \"Return\" or click anywhere to run", 14, Bold, "Panel"]],
        Manipulate`Dump`ThisIsNotAControl}, {
       Hold[""], Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {
-    748., {397., 403.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    794., {542., 548.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
     Typeset`skipInitDone$$ = True}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`eigenvalues$$ = {
@@ -582,6 +689,16 @@ $CellContext`m, $CellContext`V, $CellContext`W, $CellContext`A}; Pane[
                   
                   Grid[$CellContext`m, Alignment -> {Right, Bottom}, 
                    Spacings -> {1.5, 1}], 12]}]}]}, {}, {
+             Row[{
+               Text[
+                Style["\[ScriptCapitalM] = ", Italic, 14]], 
+               Graphics[
+                MatrixPlot[$CellContext`M], ImageSize -> Full]}], "", "", 
+             Row[{
+               Text[
+                Style["M = ", Italic, 14]], 
+               Graphics[
+                MatrixPlot[$CellContext`m], ImageSize -> Full]}]}, {}, {
              Row[{
                Text[
                 Style["\[ScriptCapitalM] is Diagonalizable = ", 16]], 
@@ -631,8 +748,8 @@ $CellContext`m, $CellContext`V, $CellContext`W, $CellContext`A}; Pane[
                 MatrixForm[
                  Eigenvectors[$CellContext`m]], 12]}]}}, Alignment -> Center, 
            Spacings -> 1, Dividers -> {{3 -> {Thick, Gray}}, None}]], 
-         ImageSize -> {Automatic, 800}, Alignment -> {Center, Center}]), 
-      "Specifications" :> {
+         ImageSize -> {Automatic, Automatic}, Alignment -> {Center, Center}]),
+       "Specifications" :> {
         Style["Eigenlift Diagonalization Example", 24, Bold, "Title"], "", 
         Style[
         "Maps the list of eigenvalues to the list of\nJordan block sizes to \
@@ -650,7 +767,7 @@ to represent blocks with the same eigenvalue", 12],
          ""}, "Options" :> {
        ControlPlacement -> Left, TrackedSymbols :> Manipulate}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{1148., {429., 435.}},
+     ImageSizeCache->{1194., {574., 580.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -679,9 +796,11 @@ to represent blocks with the same eigenvalue", 12],
    3.8348501123444443`*^9}, 3.8348501510817013`*^9, {3.8348502427805552`*^9, 
    3.834850309138956*^9}, {3.834850368806315*^9, 3.8348504204065485`*^9}, 
    3.8349123227798862`*^9, 3.834912373160788*^9, 3.834912421231121*^9, 
-   3.8349127980058756`*^9, {3.834914546840657*^9, 3.8349145668214235`*^9}},
+   3.8349127980058756`*^9, {3.834914546840657*^9, 3.8349145668214235`*^9}, 
+   3.8349302435090537`*^9, 3.8349304196322794`*^9, {3.8349304864655046`*^9, 
+   3.8349305197477627`*^9}},
  CellLabel->
-  "Out[206]=",ExpressionUUID->"9221fe2b-de82-4490-b64a-8707d4d0eebe"]
+  "Out[221]=",ExpressionUUID->"9cf7e6a7-3ba3-411a-8040-98c9858b9b23"]
 }, Open  ]],
 
 Cell[BoxData["\[IndentingNewLine]"], "Input",
@@ -1869,8 +1988,14 @@ the matrix \!\(\*SubscriptBox[\(m\), \(i\)]\)\>\""}], ";"}],
         RowBox[{"mlist", " ", "=", " ", "Mlist"}], ",", 
         RowBox[{"x", "=", "num"}], ",", " ", "mPower"}], "}"}], ",", 
       "\[IndentingNewLine]", 
-      RowBox[{"If", "[", "]"}]}], "\[IndentingNewLine]", 
-     "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"x", " ", ">", " ", "1"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"x", " ", "=", " ", "1"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"(*", " ", "Else", " ", "*)"}], "\[IndentingNewLine]", 
+        RowBox[{"x", " ", "=", " ", "0"}]}], "\[IndentingNewLine]", "]"}]}], 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", "]"}]}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"LiftedMatrixPowers", "::", "usage"}], " ", "=", 
     "\"\<Calculates the matrix powers of original matrix m by deriving it \
@@ -2206,7 +2331,8 @@ of n-1 left generalized eigenvectors for each \!\(\*SubscriptBox[\(m\), \
    3.8327786887326565`*^9, 3.832778698310537*^9}, {3.834912878058718*^9, 
    3.8349129598660145`*^9}, {3.834913006357155*^9, 3.8349130894265966`*^9}, {
    3.8349133209921756`*^9, 3.8349133220635195`*^9}, {3.8349140558697386`*^9, 
-   3.834914070479327*^9}, {3.8349146864967394`*^9, 3.8349149840605717`*^9}},
+   3.834914070479327*^9}, {3.8349146864967394`*^9, 3.8349149840605717`*^9}, {
+   3.8349150293211594`*^9, 3.8349150784858685`*^9}},
  FontSize->14,ExpressionUUID->"899aff66-6054-42f7-8cb5-ecb5dd9ad59f"]
 }, Open  ]]
 },
@@ -2233,14 +2359,14 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 183, 2, 85, "Title",ExpressionUUID->"e8fb103f-b462-4442-91d8-d5aeebf9728a"],
 Cell[CellGroupData[{
-Cell[788, 28, 25170, 474, 2583, "Input",ExpressionUUID->"a07c684b-ed8d-4007-947b-d5093085059a"],
-Cell[25961, 504, 8508, 179, 883, "Output",ExpressionUUID->"9221fe2b-de82-4490-b64a-8707d4d0eebe"]
+Cell[788, 28, 29614, 581, 2935, "Input",ExpressionUUID->"a07c684b-ed8d-4007-947b-d5093085059a"],
+Cell[30405, 611, 9004, 191, 1173, "Output",ExpressionUUID->"9cf7e6a7-3ba3-411a-8040-98c9858b9b23"]
 }, Open  ]],
-Cell[34484, 686, 149, 3, 48, "Input",ExpressionUUID->"01843b45-c14c-44c1-87ea-5153de063fb9"]
+Cell[39424, 805, 149, 3, 48, "Input",ExpressionUUID->"01843b45-c14c-44c1-87ea-5153de063fb9"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[34670, 694, 206, 3, 85, "Title",ExpressionUUID->"b7a78a9e-206a-425d-8390-7b152090dd94"],
-Cell[34879, 699, 67257, 1510, 6303, "Input",ExpressionUUID->"899aff66-6054-42f7-8cb5-ecb5dd9ad59f"]
+Cell[39610, 813, 206, 3, 85, "Title",ExpressionUUID->"b7a78a9e-206a-425d-8390-7b152090dd94"],
+Cell[39819, 818, 67616, 1517, 6391, "Input",ExpressionUUID->"899aff66-6054-42f7-8cb5-ecb5dd9ad59f"]
 }, Open  ]]
 }
 ]
