@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    108537,       2366]
-NotebookOptionsPosition[    107451,       2338]
-NotebookOutlinePosition[    108002,       2357]
-CellTagsIndexPosition[    107959,       2354]
+NotebookDataLength[    106096,       2312]
+NotebookOptionsPosition[    105010,       2284]
+NotebookOutlinePosition[    105561,       2303]
+CellTagsIndexPosition[    105518,       2300]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -149,59 +149,6 @@ Cell[BoxData[
                     RowBox[{"1.5", ",", "1"}], "}"}]}]}], "]"}], ",", "12"}], 
                     "]"}], "}"}], "]"}]}], "\[IndentingNewLine]", "}"}], 
                "]"}]}], 
-             RowBox[{"(*", " ", 
-              RowBox[{"end", " ", "of", " ", "row"}], " ", "*)"}], 
-             "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
-            "\[IndentingNewLine]", 
-            RowBox[{"{", 
-             RowBox[{"(*", " ", 
-              RowBox[{"new", " ", "line"}], " ", "*)"}], " ", "}"}], ",", 
-            "\[IndentingNewLine]", "\[IndentingNewLine]", 
-            RowBox[{"(*", " ", 
-             RowBox[{
-              RowBox[{"--", 
-               RowBox[{"--", 
-                RowBox[{"--", 
-                 RowBox[{"--", 
-                  RowBox[{"--", 
-                   RowBox[{"-", " ", "This"}]}]}]}]}]}], " ", "part", " ", 
-              "outputs", " ", 
-              RowBox[{
-               RowBox[{
-                RowBox[{
-                 RowBox[{"matrixplot", " ", "--"}], "--"}], "--"}], "--"}], 
-              RowBox[{"--", "-"}]}], " ", "*)"}], "\[IndentingNewLine]", 
-            RowBox[{"{", "\[IndentingNewLine]", 
-             RowBox[{
-              RowBox[{"Row", "[", 
-               RowBox[{"{", "\[IndentingNewLine]", 
-                RowBox[{
-                 RowBox[{"Text", "@", 
-                  RowBox[{"Style", "[", 
-                   RowBox[{
-                   "\"\<\[ScriptCapitalM] = \>\"", ",", "Italic", ",", "14"}],
-                    "]"}]}], ",", "\[IndentingNewLine]", 
-                 RowBox[{"Graphics", "[", 
-                  RowBox[{
-                   RowBox[{"MatrixPlot", "[", "M", "]"}], ",", " ", 
-                   RowBox[{"ImageSize", "\[Rule]", "Full"}]}], "]"}]}], 
-                "\[IndentingNewLine]", "}"}], "]"}], 
-              RowBox[{"(*", " ", 
-               RowBox[{"end", " ", "of", " ", "row"}], " ", "*)"}], ",", 
-              "\[IndentingNewLine]", "\"\<\>\"", ",", "\[IndentingNewLine]", 
-              "\"\<\>\"", ",", "\[IndentingNewLine]", 
-              RowBox[{"Row", "[", 
-               RowBox[{"{", "\[IndentingNewLine]", 
-                RowBox[{
-                 RowBox[{"Text", "@", 
-                  RowBox[{"Style", "[", 
-                   RowBox[{"\"\<M = \>\"", ",", "Italic", ",", "14"}], 
-                   "]"}]}], ",", "\[IndentingNewLine]", 
-                 RowBox[{"Graphics", "[", 
-                  RowBox[{
-                   RowBox[{"MatrixPlot", "[", "m", "]"}], ",", " ", 
-                   RowBox[{"ImageSize", "\[Rule]", "Full"}]}], "]"}]}], 
-                "\[IndentingNewLine]", "}"}], "]"}]}], 
              RowBox[{"(*", " ", 
               RowBox[{"end", " ", "of", " ", "row"}], " ", "*)"}], 
              "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
@@ -604,10 +551,9 @@ list to represent blocks with the same eigenvalue\>\"", ",", " ", "12"}],
    3.8349144653241353`*^9, 3.834914530101076*^9}, {3.8349145638667707`*^9, 
    3.8349145662465982`*^9}, {3.834930113944643*^9, 3.834930192740923*^9}, {
    3.8349302230661983`*^9, 3.834930242531311*^9}, {3.834930411769259*^9, 
-   3.8349304157177258`*^9}, {3.834930465038822*^9, 3.8349305193232822`*^9}},
- FontSize->14,
- CellLabel->
-  "In[221]:=",ExpressionUUID->"a07c684b-ed8d-4007-947b-d5093085059a"],
+   3.8349304157177258`*^9}, {3.834930465038822*^9, 3.8349305193232822`*^9}, {
+   3.835261624883092*^9, 3.8352616255219126`*^9}},
+ FontSize->14,ExpressionUUID->"a07c684b-ed8d-4007-947b-d5093085059a"],
 
 Cell[BoxData[
  TagBox[
@@ -2359,14 +2305,14 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 183, 2, 85, "Title",ExpressionUUID->"e8fb103f-b462-4442-91d8-d5aeebf9728a"],
 Cell[CellGroupData[{
-Cell[788, 28, 29614, 581, 2935, "Input",ExpressionUUID->"a07c684b-ed8d-4007-947b-d5093085059a"],
-Cell[30405, 611, 9004, 191, 1173, "Output",ExpressionUUID->"9cf7e6a7-3ba3-411a-8040-98c9858b9b23"]
+Cell[788, 28, 27173, 527, 2583, "Input",ExpressionUUID->"a07c684b-ed8d-4007-947b-d5093085059a"],
+Cell[27964, 557, 9004, 191, 1173, "Output",ExpressionUUID->"9cf7e6a7-3ba3-411a-8040-98c9858b9b23"]
 }, Open  ]],
-Cell[39424, 805, 149, 3, 48, "Input",ExpressionUUID->"01843b45-c14c-44c1-87ea-5153de063fb9"]
+Cell[36983, 751, 149, 3, 48, "Input",ExpressionUUID->"01843b45-c14c-44c1-87ea-5153de063fb9"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[39610, 813, 206, 3, 85, "Title",ExpressionUUID->"b7a78a9e-206a-425d-8390-7b152090dd94"],
-Cell[39819, 818, 67616, 1517, 6391, "Input",ExpressionUUID->"899aff66-6054-42f7-8cb5-ecb5dd9ad59f"]
+Cell[37169, 759, 206, 3, 85, "Title",ExpressionUUID->"b7a78a9e-206a-425d-8390-7b152090dd94"],
+Cell[37378, 764, 67616, 1517, 6391, "Input",ExpressionUUID->"899aff66-6054-42f7-8cb5-ecb5dd9ad59f"]
 }, Open  ]]
 }
 ]
